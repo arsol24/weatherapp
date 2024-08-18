@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Entity
 public class CurrentWeather {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private double temp;
     @Column(name = "wind_speed")

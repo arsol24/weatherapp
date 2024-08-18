@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Entity
 public class Forecast {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private LocalDate date;
     private double minTemp;
